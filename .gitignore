@@ -1,0 +1,12 @@
+/node_modules/
+/.happypack/
+.git
+.git-old
+webpack-assets.json
+static/dist
+*.log
+/.idea
+/config
+/envs/
+.DS_Store
+*.map%
