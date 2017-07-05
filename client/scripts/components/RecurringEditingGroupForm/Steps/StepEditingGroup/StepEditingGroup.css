@@ -1,0 +1,71 @@
+@import "../../../../../styles/_mixins.css";
+
+.StepEditingGroup {
+  .Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .BankField {
+      width: 30%;
+
+      .Bank {
+        line-height: 18px;
+      }
+    }
+
+    .Periodicity,
+    .Day {
+      width: 45%;
+    }
+  }
+
+  .RowButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 25px;
+
+    .TextLink {
+      margin-left: 20px;
+    }
+  }
+}
+
+@mixin phone {
+  .StepEditingGroup {
+    .Row {
+      &:not(:last-child) {
+        flex-direction: column;
+        justify-content: inherit;
+      }
+
+      > div {
+        width: 100%;
+      }
+
+      .BankField {
+        width: 100%;
+      }
+
+      .Periodicity,
+      .Day {
+        width: 100%;
+      }
+    }
+
+    .RowButtons {
+      width: 100%;
+
+      &:not(:last-child) {
+        flex-direction: column;
+        justify-content: inherit;
+      }
+
+      .TextLink {
+        margin-left: 0;
+        margin-top: 25px;
+      }
+    }
+  }
+}

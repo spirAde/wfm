@@ -1,0 +1,84 @@
+.Select {
+  position: relative;
+  width: 100%;
+  min-width: 160px;
+  outline: none;
+
+  .Field {
+    border: 1px solid #9b9b9b;
+    color: #262626;
+    cursor: default;
+    display: table;
+    border-spacing: 0;
+    border-collapse: separate;
+    height: 36px;
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+
+    .ArrowZone {
+      cursor: pointer;
+      text-align: center;
+      width: 32px;
+      height: 28px;
+      background-color: #949494;
+      display: inline-block;
+      vertical-align: top;
+      position: absolute;
+      top: 3px;
+      right: 3px;
+    }
+
+    .Label {
+      bottom: 0;
+      color: #262626;
+      left: 0;
+      line-height: 34px;
+      padding-left: 10px;
+      padding-right: 10px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 13px;
+
+      &.Placeholder {
+        color: #a9a9a9;
+      }
+    }
+
+    &.Error {
+      border: 1px solid #d0021b;
+    }
+  }
+
+  .Box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top-color: #e6e6e6;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    margin-top: -1px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 11;
+    max-height: 300px;
+
+    .OptionList {}
+  }
+
+  .ErrorField {
+    position: absolute;
+    top: 100%;
+    margin-top: 1px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-bottom: 3px;
+    color: #d0021b;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../../../../styles/_mixins.css";
+
+.StepFinishEditing {
+  .Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .Button {
+      margin-top: 25px;
+    }
+  }
+}
+
+@mixin phone {
+  .StepFinishEditing {
+    .Row {
+      &:not(:last-child) {
+        flex-direction: column;
+        justify-content: inherit;
+      }
+
+      > div {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "rules": {
+    "no-underscore-dangle": ["error", {
+      "allow": [
+        "__INITIAL_STATE__",
+        "__CLIENT__",
+        "__DEVELOPMENT__",
+        "__svg__",
+        "__WORTHFM_LANDING__",
+        "__PLAID_PUBLIC_KEY__",
+        "__PLAID_ENV__",
+        "__PLAID_CLIENT_NAME__"
+      ]
+    }],
+    "react/require-extension": [1, { "extensions": [".js", ".jsx"] }]
+  },
+  "extends": [
+    "airbnb"
+  ],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "shallow": true,
+    "render": true,
+    "mount": true
+  }
+}

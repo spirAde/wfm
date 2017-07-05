@@ -1,0 +1,16 @@
+.EmploymentInformationForm {
+  .Row {
+    display: flex;
+    flex-direction: row;
+
+    .Field {
+      width: 100%;
+    }
+  }
+
+  .Buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}

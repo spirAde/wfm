@@ -1,0 +1,53 @@
+@import "../../../styles/_mixins.css";
+
+.TransactionsFilter {
+  margin-bottom: 10px;
+
+  .FilterText {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .Icon {
+      width: 19px;
+      align-items: flex-start;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+
+    .Text {
+      margin-left: 10px;
+    }
+  }
+
+  .Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .Datepicker {
+      width: 47.5%;
+    }
+
+    .Select {
+      width: 30%;
+    }
+  }
+}
+
+@mixin phone {
+  .TransactionsFilter {
+    .Row {
+      flex-direction: column;
+      justify-content: inherit;
+
+      .Datepicker {
+        width: 100%;
+      }
+
+      .Select {
+        width: 100%;
+      }
+    }
+  }
+}

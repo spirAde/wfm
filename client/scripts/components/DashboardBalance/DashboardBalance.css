@@ -1,0 +1,153 @@
+@import "../../../styles/_mixins.css";
+
+.DashboardBalance {
+  .TotalBalance {
+    text-align: center;
+    padding: 8px 0 16px;
+    color: #505050;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 46px;
+    border-bottom: 1px solid #e1e1e1;
+
+    .Text {
+      vertical-align: baseline;
+      position: relative;
+      line-height: 46px;
+      display: inline-block;
+      font-size: 17px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .Amount {
+      margin-left: 8px;
+      position: relative;
+      vertical-align: baseline;
+      text-align: left;
+      display: inline-block;
+      font-weight: 300;
+      line-height: 46px;
+
+      .Sign {
+        font-size: 20px;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 46px;
+        margin-top: 3px;
+      }
+
+      .Dollars {
+        font-size: 32px;
+        line-height: 46px;
+      }
+
+      .Cents {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .AccountBalances {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .Divider {
+      width: 1px;
+      height: 76px;
+      background-color: #d7d7d7;
+      display: inline-block;
+      vertical-align: top;
+      margin: 42px 0;
+    }
+
+    .Account {
+      display: flex;
+      flex-direction: column;
+      margin: 16px 0 0;
+
+      img {
+        margin-bottom: 10px;
+      }
+
+      .Name {
+        text-align: center;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #000;
+
+        br {
+          display: none;
+        }
+      }
+
+      .Amount {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 8px 0 0;
+      }
+
+      .Pending {
+        display: block;
+        color: #392a6b;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 12px;
+        margin: 8px 0 0;
+        position: relative;
+        text-transform: none;
+
+        br {
+          display: none;
+        }
+      }
+
+      .ViewDetails {
+        a {
+          font-size: 10px;
+          line-height: 12px;
+          margin-top: 16px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+@mixin phone {
+  .DashboardBalance {
+    .AccountBalances {
+      .Divider {
+        width: 0;
+      }
+
+      .Account {
+        width: 100%;
+
+        .Name {
+          font-size: 10px;
+          line-height: 12px;
+
+          br {
+            display: block;
+          }
+        }
+
+        .Amount {
+          font-size: 13px;
+        }
+
+        .Pending {
+          br {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.Hint {
+  display: flex;
+  position: relative;
+  font-family: Lato, sans-serif;
+
+  figure {
+    font-weight: bolder;
+    text-align: center;
+    color: #000;
+    background: #ffc705;
+    margin: 0;
+    width: 21px;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 21px;
+
+    &::before {
+      content: '?';
+    }
+  }
+
+  .Content {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    color: #fff;
+    background: #392a6b;
+    border-radius: 5px;
+    padding: 15px;
+    top: -28px;
+    left: 42px;
+    min-height: 50px;
+    width: 220px;
+    max-width: 220px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 16px solid transparent;
+      border-right: 26px solid #392a6b;
+      top: 22px;
+      left: -42px;
+    }
+
+    &.Visible {
+      display: inline-block;
+    }
+  }
+}

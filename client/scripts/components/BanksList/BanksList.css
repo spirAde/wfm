@@ -1,0 +1,39 @@
+@import "../../../styles/_mixins.css";
+
+.BanksList {
+  .Banks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .Bank {
+      width: 113px;
+      height: 95px;
+      display: inline-block;
+      vertical-align: top;
+      border-radius: 10px;
+      border: 1px solid #ffc705;
+      overflow: hidden;
+      line-height: 93px;
+      text-align: center;
+      margin-bottom: 16px;
+      flex-basis: 22.5%;
+      cursor: pointer;
+
+      img {
+        max-height: 100%;
+      }
+    }
+  }
+}
+
+@mixin phone {
+  .BanksList {
+    .Banks {
+      .Bank {
+        flex-basis: 45%;
+      }
+    }
+  }
+}

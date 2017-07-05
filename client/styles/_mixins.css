@@ -1,0 +1,32 @@
+@import "./_variables.css";
+
+@define-mixin clearfix {
+  &:before {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+@define-mixin phone {
+  @media (max-width: $phone) {
+    @mixin-content;
+  }
+}
+
+@define-mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@define-mixin tablet {
+  @media (min-width: $phone) and (max-width: $desktop) {
+    @mixin-content;
+  }
+}

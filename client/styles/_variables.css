@@ -1,0 +1,48 @@
+/*
+ * Colors
+ * ======================================================================== */
+
+$color-jacarta:                   #392a6b;
+$color-amber:                     #fbc304;
+$color-tundora:                   #4a4a4a;
+$color-white:                     #ffffff;
+$color-black:                     #000000;
+$color-grey:                      #cccccc;
+$color-monza:                     #d0021b;
+$color-foam:                      #eef8fd;
+$color-tusk:                      #def5c7;
+$color-cherub:                    #f7cee7;
+
+
+$color-primary:                   $color-jacarta;
+$color-secondary:                 $color-amber;
+$color-error:                     $color-monza;
+$color-message-notification:      $color-foam;
+$color-message-success:           $color-tusk;
+$color-message-error:             $color-cherub;
+
+/*
+ * Typography
+ * ======================================================================== */
+
+$font-family-primary:             Lato;
+$font-family-secondary:           Nixie+One;
+
+$font-size-base:		          17px;
+$font-weight-base:                400;
+
+/*
+ * Z-Indexes
+ * ======================================================================== */
+
+$z-index-base:                    0;
+$z-index-lowest:                  100;
+$z-index-medium:                  200;
+$z-index-high:                    300;
+$z-index-highest:                 400;
+
+/*
+ * Breakpoints
+ * ======================================================================== */
+$phone:                           768px;
+$desktop:                         1024px;

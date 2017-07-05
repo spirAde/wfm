@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for client/scripts/components/UI/Input/InputSSN/InputSSN.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../index.html">All files</a> / <a href="index.html">client/scripts/components/UI/Input/InputSSN</a> InputSSN.jsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">5.88% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>4/68</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/48</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">6.25% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>4/64</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component, PropTypes } from 'react';
+import classNames from 'classnames/bind';
+&nbsp;
+import styles from './InputSSN.css';
+&nbsp;
+import InputText from '../InputText/InputText';
+&nbsp;
+const cx = classNames.bind(styles);
+&nbsp;
+function <span class="fstat-no" title="function not covered" >escapeRegExp(</span>str) {
+<span class="cstat-no" title="statement not covered" >  return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&amp;");</span>
+}
+&nbsp;
+function <span class="fstat-no" title="function not covered" >isZero(</span>value) {
+<span class="cstat-no" title="statement not covered" >  return !isNaN(parseFloat(value)) &amp;&amp; isFinite(value) &amp;&amp; parseInt(value, 10) === 0;</span>
+}
+&nbsp;
+class InputSSN extends Component {
+<span class="fstat-no" title="function not covered" >  co</span>nstructor(props) {
+<span class="cstat-no" title="statement not covered" >    super(props);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    this.state = {</span>
+      value: this.formatInput(props.value).value,
+    };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    this.handleChange = this.handleChange.bind(this);</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  co</span>mponentWillReceiveProps(nextProps) {
+<span class="cstat-no" title="statement not covered" >    this.setState({</span>
+      value: this.formatInput(nextProps.value).value,
+    });
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  ge</span>tNumberRegex(g) {
+    const { decimalSeparator, precision } = <span class="cstat-no" title="statement not covered" >this.props;</span>
+<span class="cstat-no" title="statement not covered" >    return new RegExp('\\d' + (precision &gt; 0 ? '|' + escapeRegExp(decimalSeparator) : ''), g ? 'g' : undefined);</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  fo</span>rmatInput(value) {
+    const { decimalSeparator, thousandSeparator } = <span class="cstat-no" title="statement not covered" >this.props;</span>
+&nbsp;
+    let valueStr = <span class="cstat-no" title="statement not covered" >value || isZero(value)</span>
+      ? value.toString().replace(/^0+(?!\.|$)/, '') // remove leading zeros
+      : '';
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (valueStr === '.') <span class="cstat-no" title="statement not covered" >valueStr = '0.'; </span></span>// add leading zero if start typing with dot
+&nbsp;
+    const numRegex = <span class="cstat-no" title="statement not covered" >this.getNumberRegex(true);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (!valueStr || !(valueStr.match(numRegex))) {</span>
+<span class="cstat-no" title="statement not covered" >      return { value: '', formattedValue: '' };</span>
+    }
+&nbsp;
+    let formattedValue = <span class="cstat-no" title="statement not covered" >valueStr.match(numRegex).join('');</span>
+&nbsp;
+    let beforeDecimal = <span class="cstat-no" title="statement not covered" >formattedValue;</span>
+    let afterDecimal = <span class="cstat-no" title="statement not covered" >'';</span>
+&nbsp;
+    const hasDecimals = <span class="cstat-no" title="statement not covered" >formattedValue.indexOf(decimalSeparator) !== -1;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (hasDecimals) {</span>
+      const parts = <span class="cstat-no" title="statement not covered" >formattedValue.replace(/(.*\.[0-9][0-9]?).*/g, '$1').split(decimalSeparator);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      beforeDecimal = parts[0];</span>
+<span class="cstat-no" title="statement not covered" >      afterDecimal = parts[1];</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    beforeDecimal = beforeDecimal.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1' + thousandSeparator);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    formattedValue = beforeDecimal + (hasDecimals &amp;&amp; decimalSeparator || '') + afterDecimal;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      value: parseFloat(formattedValue.match(numRegex).join('')),
+      formattedValue,
+    };
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  ge</span>tCursorPosition(inputValue, formattedValue, cursorPos) {
+    const numRegex = <span class="cstat-no" title="statement not covered" >this.getNumberRegex();</span>
+&nbsp;
+    let j = <span class="cstat-no" title="statement not covered" >0;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    for (let i = 0; i &lt; cursorPos; i++) {</span>
+<span class="cstat-no" title="statement not covered" >      if (!inputValue[i].match(numRegex) &amp;&amp; inputValue[i] !== formattedValue[j]) <span class="cstat-no" title="statement not covered" >continue;</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      while (inputValue[i] !== formattedValue[j] &amp;&amp; j &lt; formattedValue.length) <span class="cstat-no" title="statement not covered" >j++;</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      j++;</span>
+    }
+&nbsp;
+    // check if there is no number before caret position
+<span class="cstat-no" title="statement not covered" >    while (j &gt; 0 &amp;&amp; formattedValue[j]) {</span>
+<span class="cstat-no" title="statement not covered" >      if (!formattedValue[j - 1].match(numRegex)) <span class="cstat-no" title="statement not covered" >j--;</span></span>
+&nbsp;
+      else <span class="cstat-no" title="statement not covered" >break;</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return j;</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  se</span>tCaretPosition(caretPos) {
+    const el = <span class="cstat-no" title="statement not covered" >this.input;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (el) {</span>
+<span class="cstat-no" title="statement not covered" >      if (el.createTextRange) {</span>
+        const range = <span class="cstat-no" title="statement not covered" >el.createTextRange();</span>
+<span class="cstat-no" title="statement not covered" >        range.move('character', caretPos);</span>
+<span class="cstat-no" title="statement not covered" >        range.select();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return true;</span>
+      }
+      // (el.selectionStart === 0 added for Firefox bug)
+<span class="cstat-no" title="statement not covered" >      if (el.selectionStart || el.selectionStart === 0) {</span>
+<span class="cstat-no" title="statement not covered" >        el.focus();</span>
+<span class="cstat-no" title="statement not covered" >        el.setSelectionRange(caretPos, caretPos);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return true;</span>
+      }
+    }
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  ha</span>ndleChange(event) {
+<span class="cstat-no" title="statement not covered" >    event.preventDefault();</span>
+&nbsp;
+    const { formattedValue, value } = <span class="cstat-no" title="statement not covered" >this.formatInput(event.target.value);</span>
+&nbsp;
+    const inputValue = <span class="cstat-no" title="statement not covered" >event.target.value.toString();</span>
+    let cursorPos = <span class="cstat-no" title="statement not covered" >this.input.selectionStart;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    this.setState({ value: formattedValue }, <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      cursorPos = this.getCursorPosition(inputValue, formattedValue, cursorPos);</span>
+<span class="cstat-no" title="statement not covered" >      this.setCaretPosition(cursorPos);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      this.props.onChange(value);</span>
+    });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return value;</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  re</span>nder() {
+    const { value } = <span class="cstat-no" title="statement not covered" >this.state;</span>
+    const { symbol, withStaticDecimals } = <span class="cstat-no" title="statement not covered" >this.props;</span>
+&nbsp;
+    const classes = <span class="cstat-no" title="statement not covered" >cx(styles.InputNumber, {</span>
+      WithSymbol: symbol,
+    });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return (</span>
+      &lt;div className={classes}&gt;
+        {symbol &amp;&amp; &lt;span className={styles.Symbol}&gt;{symbol}&lt;/span&gt;}
+        &lt;InputText
+          ref={<span class="fstat-no" title="function not covered" >(i</span>nput) =&gt; { <span class="cstat-no" title="statement not covered" >this.input = input; </span>}}
+          onChange={this.handleChange}
+          inputStyle={{
+            paddingLeft: symbol ? 25 : 10,
+            paddingRight: withStaticDecimals ? 28 : 10,
+          }}
+          value={value}
+        /&gt;
+        {
+          withStaticDecimals &amp;&amp;
+          &lt;div className={styles.DecimalsField}&gt;
+            &lt;span className={styles.Decimals}&gt;.00&lt;/span&gt;
+          &lt;/div&gt;
+        }
+      &lt;/div&gt;
+    );
+  }
+}
+&nbsp;
+InputSSN.displayName = 'InputSSN';
+&nbsp;
+InputSSN.propTypes = {
+  onChange: PropTypes.func,
+  value: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string,
+  ]),
+  symbol: PropTypes.string,
+  precision: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string,
+  ]),
+  decimalSeparator: PropTypes.string,
+  thousandSeparator: PropTypes.string,
+  withStaticDecimals: PropTypes.bool,
+};
+&nbsp;
+InputSSN.defaultProps = {
+  onChange: Function.prototype,
+  symbol: '',
+  precision: 0,
+  decimalSeparator: '.',
+  thousandSeparator: ',',
+  value: '',
+  withStaticDecimals: false,
+};
+&nbsp;
+export default InputSSN;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Jan 16 2017 16:28:01 GMT+0500 (+05)
+</div>
+</div>
+<script src="../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../sorter.js"></script>
+</body>
+</html>

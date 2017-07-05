@@ -1,0 +1,79 @@
+@import "../../../styles/_mixins.css";
+
+.MoneyTypeTakeAssessment {
+  .Heading {
+    text-align: center;
+    font-size: 30px;
+    text-transform: none;
+    font-weight: 400;
+    margin: 0;
+
+    b {
+      font-weight: 600;
+      font-size: 24px;
+    }
+
+    span {
+      font-family: 'Nixie One', sans-serif;
+    }
+  }
+
+  .Types {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0;
+
+    .Divider {
+      width: 1px;
+      height: 80px;
+      background-color: #d7d7d7;
+      display: inline-block;
+      vertical-align: top;
+      margin: 8px 0;
+    }
+
+    .Type {
+      color: #392a6b;
+
+      .Picture {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+
+    .Button {
+      width: 50%;
+    }
+  }
+}
+
+@mixin phone {
+  .MoneyTypeTakeAssessment {
+    .Types {
+      flex-wrap: wrap;
+
+      .Divider {
+        width: 0;
+      }
+
+      .Type {
+        display: inline-block;
+        width: 114px;
+      }
+    }
+
+    .Row {
+      .Button {
+        width: 100%;
+      }
+    }
+  }
+}

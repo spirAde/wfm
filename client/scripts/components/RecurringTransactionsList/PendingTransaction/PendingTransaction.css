@@ -1,0 +1,21 @@
+.PendingTransaction {
+  margin-bottom: 8px;
+
+  &:first-child {
+    margin-top: 8px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .Divider {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .Processing {
+    font-weight: 700;
+    color: #f5a725;
+  }
+}

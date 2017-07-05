@@ -1,0 +1,11 @@
+@import "../../../styles/_mixins.css";
+
+.WelcomePage {
+  padding: 0 55px;
+}
+
+@mixin phone {
+  .WelcomePage {
+    padding: 0 20px;
+  }
+}

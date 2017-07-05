@@ -1,0 +1,45 @@
+@import "../../../../../styles/_mixins.css";
+
+.StepSelectYear {
+  .Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    .TextLink {
+      display: block;
+      font-size: 12px;
+    }
+
+    .Buttons {
+      display: flex;
+      flex-direction: row;
+
+      .Button {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+@mixin phone {
+  .StepSelectYear {
+    .Row {
+      justify-content: space-between;
+
+      .TextLink {
+        display: none;
+      }
+
+      .Buttons {
+        width: 100%;
+        justify-content: space-between;
+
+        .Button {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

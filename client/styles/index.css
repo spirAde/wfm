@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,200italic,200,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Nixie+One:400);
+
+@import "../../node_modules/normalize.css";
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #464646;
+  line-height: 25px;
+  background-color: #fff;
+}
+
+body > div > div {
+  height: 100%;
+  position: relative;
+}
+
+a {
+  color: #464646;
+  text-decoration: underline;
+  transition: all 0.2s ease-in;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0 0 10px;
+}

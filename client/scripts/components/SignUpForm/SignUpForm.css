@@ -1,0 +1,16 @@
+.SignUpForm {
+  margin-top: 20px;
+
+  .Field {
+
+  }
+
+  .Buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 40px 0 20px;
+    text-align: center;
+    vertical-align: middle;
+  }
+}

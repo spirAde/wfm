@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="25px" viewBox="0 0 21 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>calendar</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="0" y="0" width="21" height="25" id="rect-1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="calendar">
+            <image x="0" y="0" width="21" height="25" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAZCAYAAADe1WXtAAAABGdBTUEAA1teXP8meAAAAoJJREFUSA2llMtLVkEUwNV8BJmpFYk90AhaFJGLVkXQIghUKCgyCFxI/0b/T4to0yaICHFVVPRYZIiWPRV72JPs8/H73WYuc7/vfi70wI8598zMmXPOnLkNDbXSjWkEttROFSxNfF2G3QUrH05Ui06PQFv1RNV3S1i3q8pe6nSFRavguJ44Hymsa+brEBwI1mXGb/APeqEP6sk0E67bDqdBX8oblaOgUTHCW+DifTAE9eQmExVoh2FoBGXcmhpdlJcon2AbqC9CmWh33nVzQWfIpFJ2UfNMPYBfYORlov03uM4gCmLbHIb+YLU93DAF5yDWGrUgW/naA8/gOJyAKDOxuBomYQl6wA3W6DnUE/eehLiuFd0AG1OnNzB48xuVTjZed3PqdL0XZNvshO/gjftAYgA6+wLx9gtOsdeVAWbOwzh487bQHfCiz8JteAiZpJFGW9n4A+MH+Ao/g65znWo3g9JIV5iwkfvADS7cDzqahbtgu/kw1D+Cjmyt95CXL22pe0zYQmPQBX9hFGwf110BD94Bl0Bne+ECGIAHn4HXafqmYpqvnAAvQv0teBHqRuejUDdq96gvBJ2hePvR6VPsn0Gn6j5D66hu/ZaCrt30tXuA2WSiYsP2g+lbw6vQAaY3Av43PfAi+J+wvewE53thEBZhFmrS9wAv5RGYsik9hqlEn0H/E+w68cAX4Pv34EzSmpqKl+MCa+hma2gURqXuhbhG3XkdPgHFx5FJ7p2vCvjuTecU2Anq/iwOBn2A0XJpPwalkkbqAgs+Ae/AS1GfBiNXnwQjjDpqLvl/uTk3/S+6Nb0PZiDq1trSlOlmFsX+zSR1ei0aNzmupk7T+m7K7xr/WqP2En+PPAAAAABJRU5ErkJggg=="></image>
+            <use fill-opacity="0" fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+        </g>
+    </g>
+</svg>

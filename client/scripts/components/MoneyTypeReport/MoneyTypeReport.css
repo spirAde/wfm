@@ -1,0 +1,81 @@
+.MoneyTypeReport {
+  .Archetypes {
+    display: flex;
+    margin: 20px 0 0;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .Archetype {
+      font-weight: 700;
+      position: relative;
+      height: 215px;
+      display: inline-block;
+      vertical-align: top;
+      width: 122px;
+      text-transform: uppercase;
+      color: #392a6b;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration: none;
+      cursor: pointer;
+
+      .Percent {
+        display: block;
+        color: #392a6b;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-top: 10px;
+      }
+
+      &::after {
+        width: 0;
+        height: 0;
+        display: none;
+        border-top: 26px transparent solid;
+        border-left: 20px transparent solid;
+        border-right: 20px transparent solid;
+        border-bottom: 26px #a1a1a1 solid;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -20px;
+      }
+
+      &.Active {
+        &.Visionary {
+          &::after {
+            border-bottom-color: #79b2be;
+            display: block;
+          }
+        }
+        &.Producer {
+          &::after {
+            border-bottom-color: #969b12;
+            display: block;
+          }
+        }
+        &.Nurturer {
+          &::after {
+            border-bottom-color: #d9396f;
+            display: block;
+          }
+        }
+        &.Epicure {
+          &::after {
+            border-bottom-color: #1b4d7f;
+            display: block;
+          }
+        }
+        &.Independent {
+          &::after {
+            border-bottom-color: #ff6400;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

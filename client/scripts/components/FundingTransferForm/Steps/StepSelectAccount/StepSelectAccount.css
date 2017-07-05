@@ -1,0 +1,30 @@
+@import "../../../../../styles/_mixins.css";
+
+.StepSelectAccount {
+  .Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    > div {
+      width: 45%;
+    }
+
+    .Button {
+      margin-top: 25px;
+    }
+  }
+}
+
+@mixin phone {
+  .StepSelectAccount {
+    .Row {
+      flex-direction: column;
+      justify-content: inherit;
+
+      > div {
+        width: 100%;
+      }
+    }
+  }
+}

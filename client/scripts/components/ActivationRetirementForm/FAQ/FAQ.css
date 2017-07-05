@@ -1,0 +1,9 @@
+.FAQ {
+  .Small {
+    font-size: 14px;
+
+    a {
+      font-size: 14px;
+    }
+  }
+}

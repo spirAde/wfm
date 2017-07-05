@@ -1,0 +1,21 @@
+@import "../../../../../styles/_mixins.css";
+
+.StepConfirmFunding {
+  .Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+}
+
+@mixin phone {
+  .StepConfirmFunding {
+    .Row {
+      &:not(:last-child) {
+        flex-direction: column;
+        justify-content: inherit;
+      }
+    }
+  }
+}

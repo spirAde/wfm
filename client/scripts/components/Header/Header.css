@@ -1,0 +1,65 @@
+@import "../../../styles/_variables.css";
+@import "../../../styles/_mixins.css";
+
+.Header {
+  padding: 10px 0;
+  text-align: center;
+  background-color: $color-primary;
+  min-width: 614px;
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  .Wrapper {
+    margin: 0 auto;
+    width: 614px;
+    padding-left: 55px;
+    display: block;
+
+    > a {
+      display: inline-block;
+      vertical-align: middle;
+      width: 139px;
+      height: 50px;
+      background: url('../../../images/logo-big.png') no-repeat 0 center;
+      background-size: 139px 50px;
+    }
+
+    .LinkBlock {
+      font-size: 14px;
+      position: relative;
+      top: 20px;
+      float: right;
+
+      > a {
+        color: #ffc705;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-top: 6px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@mixin phone {
+  .Header {
+    min-width: 0;
+    padding: 13px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+    position: relative;
+
+    .Wrapper {
+      width: 100%;
+      padding-left: 35px;
+
+      .LinkBlock {
+        top: 25px;
+      }
+    }
+  }
+}

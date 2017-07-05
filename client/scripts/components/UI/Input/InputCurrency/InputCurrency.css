@@ -1,0 +1,33 @@
+.InputCurrency {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  &.WithSymbol {
+    .Symbol {
+      position: absolute;
+      top: 6px;
+      left: 10px;
+      font-size: 13px;
+      color: #9b9b9b;
+      z-index: 1;
+    }
+  }
+
+  .CentsField {
+    position: absolute;
+
+    .Cents {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      font-size: 13px;
+      color: #9b9b9b;
+      z-index: 1;
+    }
+  }
+
+  input {
+    text-align: right;
+  }
+}

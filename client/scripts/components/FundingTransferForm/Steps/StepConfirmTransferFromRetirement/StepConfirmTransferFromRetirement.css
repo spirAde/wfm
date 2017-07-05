@@ -1,0 +1,32 @@
+@import "../../../../../styles/_mixins.css";
+
+.StepConfirmTransferFromRetirement {
+  p,
+  li {
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  .Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+}
+
+@mixin phone {
+  .StepConfirmTransferFromRetirement {
+    p,
+    li {
+      font-size: 15px;
+    }
+
+    .Row {
+      &:not(:last-child) {
+        flex-direction: column;
+        justify-content: inherit;
+      }
+    }
+  }
+}

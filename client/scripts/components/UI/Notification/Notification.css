@@ -1,0 +1,68 @@
+.Notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  max-width: 614px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 50px;
+  position: relative;
+  font-family: Lato, sans-serif;
+  user-select: none;
+  padding: 0 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+  z-index: 1;
+
+  &.Info {
+    border: 1px solid #eef8fd;
+    background: #eef8fd;
+    color: #392a6b;
+
+    a {
+      background: #eef8fd;
+      color: #392a6b;
+      font-size: 12px;
+    }
+  }
+
+  &.Error {
+    border: 1px solid #f7cee7;
+    background: #f7cee7;
+    color: #9E005D;
+
+    a {
+      background: #f7cee7;
+      color: #9E005D;
+      font-size: 12px;
+    }
+  }
+
+  &.Success {
+    border: 1px solid #def5c7;
+    background: #def5c7;
+    color: #213f00;
+
+    a {
+      background: #def5c7;
+      color: #213f00;
+      font-size: 12px;
+    }
+  }
+
+  .Close {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.4;
+    top: 5px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+
+    svg {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}

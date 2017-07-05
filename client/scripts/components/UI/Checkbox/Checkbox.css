@@ -1,0 +1,62 @@
+.Checkbox {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  cursor: pointer;
+  color: #4a4a4a;
+  padding-left: 25px;
+  font-size: 17px;
+  font-family: Lato, sans-serif;
+  font-weight: 200;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .CheckboxInput {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+.CheckboxIndicator {
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  top: 4px;
+  background: #ffffff;
+
+  .Checkbox input:not(:checked) ~ & {
+    border: 1px solid #4a4a4a;
+  }
+
+  .Checkbox input:checked ~ & {
+    background: #392a6b;
+    border: 1px solid #392a6b;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+
+    .Checkbox input:checked ~ & {
+      display: block;
+    }
+
+    .Checkbox & {
+      left: 4px;
+      top: 1px;
+      width: 5px;
+      height: 9px;
+      border: 1px solid #ffffff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.Label {
+  opacity: 1;
+}

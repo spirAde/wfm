@@ -1,0 +1,141 @@
+@import "../../../styles/_mixins.css";
+
+.LayoutWrapper {
+  display: flex;
+  min-width: 614px;
+  height: 100%;
+  min-height: 100vh;
+  padding-top: 70px;
+  padding-bottom: 236px;
+  background-color: #fdfaee;
+
+  .Wrapper {
+    position: relative;
+    margin: 0 auto;
+
+    &.Auth {
+      width: 614px;
+      background-color: #fff;
+
+      .Inner {
+        width: 310px;
+        padding-bottom: 40px;
+        margin: 0 auto;
+      }
+    }
+
+    &.Survey {
+      width: 614px;
+      background-color: #fff;
+
+      .Inner {
+        padding: 0 55px 20px;
+      }
+    }
+
+    &.Dashboard {
+      width: 784px;
+
+      .Inner {
+
+      }
+    }
+
+    &.Accounts {
+      width: 784px;
+
+      .Inner {
+
+      }
+    }
+
+    &.Funding {
+      width: 784px;
+
+      .Inner {
+
+      }
+    }
+
+    &.MoneyType {
+      width: 784px;
+
+      .Inner {
+
+      }
+    }
+
+    &.NotFound {
+      width: 614px;
+      background-color: #fff;
+
+      .Inner {
+
+      }
+    }
+  }
+}
+
+@mixin phone {
+  .LayoutWrapper {
+    min-width: 0;
+    min-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: inherit;
+
+    .Wrapper {
+      width: 100%;
+
+      &.Auth {
+        .Inner {
+          padding: 0 16px;
+        }
+      }
+
+      &.Survey {
+        .Inner {
+          padding: 0 16px 20px;
+        }
+      }
+
+      &.Dashboard {
+        width: 100%;
+
+        .Inner {
+
+        }
+      }
+
+      &.Accounts {
+        width: 100%;
+
+        .Inner {
+
+        }
+      }
+
+      &.Funding {
+        width: 100%;
+
+        .Inner {
+
+        }
+      }
+
+      &.MoneyType {
+        width: 100%;
+
+        .Inner {
+
+        }
+      }
+
+      &.NotFound {
+        .Inner {
+
+        }
+      }
+    }
+  }
+}

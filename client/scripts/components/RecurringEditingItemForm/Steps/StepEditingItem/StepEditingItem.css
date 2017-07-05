@@ -1,0 +1,53 @@
+@import "../../../../../styles/_mixins.css";
+
+.StepEditingItem {
+  .Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    > div {
+      width: 45%;
+    }
+  }
+
+  .RowButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 25px;
+
+    .TextLink {
+      margin-left: 20px;
+    }
+  }
+}
+
+@mixin phone {
+  .StepEditingItem {
+    .Row {
+      &:not(:last-child) {
+        flex-direction: column;
+        justify-content: inherit;
+      }
+
+      > div {
+        width: 100%;
+      }
+    }
+
+    .RowButtons {
+      width: 100%;
+
+      &:not(:last-child) {
+        flex-direction: column;
+        justify-content: inherit;
+      }
+
+      .TextLink {
+        margin-left: 0;
+        margin-top: 25px;
+      }
+    }
+  }
+}

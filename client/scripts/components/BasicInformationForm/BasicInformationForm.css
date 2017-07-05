@@ -1,0 +1,70 @@
+@import "../../../styles/_mixins.css";
+
+.BasicInformationForm {
+  .Row {
+    display: flex;
+    justify-content: space-between;
+
+    .FirstName, .LastName, .Phone, .SSN, .BirthDate {
+      width: 230px;
+    }
+
+    .Address {
+      width: 100%;
+
+      .Instruction {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 15px;
+        padding-top: 16px;
+        color: #392a6b;
+      }
+    }
+
+    .ConfirmationText {
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 15px;
+      color: #392a6b;
+      position: relative;
+      top: 40px;
+      margin-left: 10px;
+      height: 15px;
+      width: 100%;
+    }
+
+    .City, .State, .ZipCode {
+      width: 160px;
+    }
+  }
+
+  .Buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}
+
+@mixin phone {
+  .BasicInformationForm {
+    .Row {
+      flex-direction: column;
+
+      .FirstName,
+      .LastName,
+      .Phone,
+      .SSN,
+      .BirthDate,
+      .City,
+      .State,
+      .ZipCode {
+        width: 100%;
+      }
+
+      .ConfirmationText {
+        top: -5px;
+        margin-left: 0;
+      }
+    }
+  }
+}

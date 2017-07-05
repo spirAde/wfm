@@ -1,0 +1,84 @@
+@import "../../../styles/_mixins.css";
+
+.OnboardingNavigation {
+  margin: 20px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .Group {
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+
+    &.Active {
+      .GroupName {
+        color: #ffc705;
+      }
+    }
+
+    .Steps {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      vertical-align: middle;
+      font-size: 0;
+
+      a {
+        cursor: pointer;
+      }
+
+      .Step {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #9b9b9b;
+        display: inline-block;
+        vertical-align: middle;
+        border: 5px solid #fff;
+        margin: 0 4px;
+
+        &.Active {
+          background-color: #ffc705;
+        }
+
+        &.Current {
+          background-color: #ffc705;
+          border: 5px solid #f9edc3;
+        }
+      }
+    }
+  }
+}
+
+@mixin phone {
+  .OnboardingNavigation {
+    .Group {
+      font-size: 12px;
+      width: 100%;
+
+      .GroupName {
+        display: flex;
+        align-items: center;
+        margin: 0 5px;
+      }
+
+      .Steps {
+        flex-direction: column;
+
+        a {
+          margin-bottom: 5px;
+        }
+
+        .Step {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

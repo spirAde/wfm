@@ -1,0 +1,147 @@
+@import "../../../styles/_mixins.css";
+
+.Footer {
+  padding: 10px 0;
+  font-size: 11px;
+  color: #ffffff;
+  height: 236px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4a4a4a;
+  min-width: 960px;
+  z-index: 1;
+  display: block;
+
+  @mixin clearfix;
+
+  .Wrapper {
+    width: 960px;
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+    flex-direction: row;
+
+    .LeftColumn {
+      display: inline-block;
+      vertical-align: top;
+      width: 204px;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 17px;
+      text-align: right;
+      margin-right: 50px;
+      padding-top: 4px;
+
+      .InfoContainer {
+        display: block;
+
+        @mixin clearfix;
+
+        .Address {
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        margin-bottom: 20px;
+        width: 189px;
+        vertical-align: middle;
+      }
+    }
+
+    .RightColumn {
+      padding-top: 0;
+      display: inline-block;
+      vertical-align: top;
+      width: 702px;
+      font-size: 13px;
+      line-height: 20px;
+
+      hr {
+        border-top-color: #979797;
+        margin: 10px 0;
+        height: 0;
+        box-sizing: content-box;
+      }
+
+      .RightColumnSection {
+        @mixin clearfix;
+
+        .Ameritrade {
+          float: right;
+        }
+
+        .TDInfo {
+          width: 500px;
+          margin-bottom: 0;
+          float: left;
+
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+
+      .BottomSection {
+        color: #9b9b9b;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 14px;
+
+        a {
+          color: #9b9b9b;
+        }
+      }
+    }
+  }
+}
+
+@mixin phone {
+  .Footer {
+    min-width: 0;
+    height: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+
+    .Wrapper {
+      width: 100%;
+
+      .LeftColumn {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+
+        .InfoContainer {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      .RightColumn {
+        width: 100%;
+
+        .RightColumnSection {
+          .Ameritrade {
+            text-align: center;
+            float: none;
+          }
+
+          .TDInfo {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

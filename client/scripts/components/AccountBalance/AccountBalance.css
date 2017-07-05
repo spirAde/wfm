@@ -1,0 +1,124 @@
+@import "../../../styles/_mixins.css";
+
+.AccountBalance {
+  .Information {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .Account {
+      display: flex;
+
+      .AccountImage {
+        margin-right: 10px;
+      }
+
+      .AccountNameAndNumber {
+        margin-right: 20px;
+        text-transform: uppercase;
+
+        span {
+          &:first-child {
+            vertical-align: baseline;
+            position: relative;
+            font-size: 24px;
+            font-weight: 400;
+          }
+
+          &:last-child {
+            line-height: 1;
+            font-size: 12px;
+            font-weight: 400;
+            position: relative;
+            display: block;
+          }
+        }
+      }
+    }
+
+    .AccountAmounts {
+      margin-top: -10px;
+
+      .Amount {
+        font-weight: 300;
+
+        .Sign {
+          font-size: 20px;
+          display: inline-block;
+          vertical-align: top;
+          line-height: 46px;
+          margin-top: 3px;
+        }
+
+        .Dollars {
+          font-size: 32px;
+          line-height: 46px;
+          vertical-align: baseline;
+        }
+
+        .Cents {
+          font-size: 22px;
+        }
+      }
+
+      .Pending {
+        display: block;
+        color: #392a6b;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 12px;
+        margin: -11px 0 0;
+        position: relative;
+        text-transform: none;
+      }
+    }
+  }
+
+  .Description {
+    text-transform: none;
+    font-weight: 400;
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 50px;
+  }
+}
+
+@mixin phone {
+  .AccountBalance {
+    .Information {
+      flex-direction: column;
+
+      .Account {
+        flex-basis: 100%;
+
+        .AccountImage {
+
+        }
+
+        .AccountNameAndNumber {
+          margin-right: 0;
+
+          span {
+            &:first-child {
+              font-size: 18px;
+            }
+
+            &:last-child {
+            }
+          }
+        }
+      }
+
+      .AccountAmounts {
+        margin-top: 0;
+        text-align: center;
+      }
+    }
+
+    .Description {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+}

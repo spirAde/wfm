@@ -1,0 +1,99 @@
+.Transaction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  width: 100%;
+
+  .DateSum {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 90px;
+
+    .Date {
+      font-weight: 700;
+    }
+
+    .Sum {
+
+    }
+  }
+
+  .Marker {
+    overflow: hidden;
+    vertical-align: top;
+    width: 60px;
+    position: relative;
+    text-align: center;
+
+    &:before {
+      padding-bottom: 9999px;
+      margin-bottom: -9999px;
+      width: 2px;
+      height: 100%;
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -1px;
+      background: #d9d9d9;
+      top: 0;
+      z-index: 0;
+    }
+
+    .Circle {
+      display: inline-block;
+      vertical-align: top;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: #4a4a4a;
+      position: relative;
+      margin-top: 6px;
+
+      &.Completed {
+        background-color: #4a4a4a;
+      }
+
+      &.Canceled {
+        background-color: #9b9b9b;
+      }
+
+      &.Processing {
+        background-color: #f5a623;
+      }
+
+      &.Error {
+        background-color: #d0021b;
+      }
+    }
+  }
+
+  .Details {
+    vertical-align: top;
+    padding-bottom: 30px;
+    width: calc(100% - 15px);
+
+    .Title {
+      font-weight: 700;
+
+      .Status {
+        &.Completed {
+          color: #4a4a4a;
+        }
+
+        &.Canceled {
+          color: #9b9b9b;
+        }
+
+        &.Processing {
+          color: #f5a623;
+        }
+
+        &.Error {
+          color: #d0021b;
+        }
+      }
+    }
+  }
+}

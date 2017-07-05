@@ -1,0 +1,16 @@
+.Question {
+  .QuestionText {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .Radio {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

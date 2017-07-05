@@ -1,0 +1,38 @@
+.AccountsForm {
+  .RadioGroup {
+    .Radio {
+      border-bottom: 1px solid #ffc705;
+      padding: 16px 0;
+
+      &:first-child {
+        border-top: 1px solid #ffc705;
+      }
+
+      .Amount {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+
+  .Total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 0;
+
+    .Text {
+      margin-left: 36px;
+    }
+
+    .TotalAmount {
+      color: #392a6b;
+    }
+  }
+
+  .Buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+}

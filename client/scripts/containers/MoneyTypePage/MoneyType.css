@@ -1,0 +1,23 @@
+.MoneyType {
+  max-width: 614px;
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+
+  .Title {
+    text-align: center;
+    font-size: 30px;
+    text-transform: none;
+    font-weight: 400;
+    margin: 0;
+    padding: 8px 0 24px;
+
+    b {
+      font-weight: 600;
+    }
+
+    span {
+      font-family: 'Nixie One', sans-serif;
+    }
+  }
+}

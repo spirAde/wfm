@@ -1,0 +1,35 @@
+.PhoneVerificationForm {
+  .Row {
+    display: flex;
+    flex-direction: row;
+
+    .Field {
+      width: 100%;
+    }
+  }
+
+  .RowRight {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .RowCenter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .RowCenterWithText {
+    display: flex;
+    justify-content: center;
+
+    .Text {
+      font-size: 12px;
+
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}

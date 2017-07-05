@@ -1,0 +1,87 @@
+.InputDatepicker {
+  outline: none;
+  box-sizing: border-box;
+  display: block;
+  background: #ffffff;
+  margin: 0;
+  border: 1px solid #9b9b9b;
+  padding: 0 10px;
+  width: 100%;
+  line-height: 34px;
+  font-size: 13px;
+  font-family: Lato, sans-serif;
+  color: #000;
+
+  &.Error {
+    border: 1px solid #d0021b;
+  }
+}
+
+/* Fix react-datepicker default styles */
+:global {
+  .react-datepicker {
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    color: #464646;
+  }
+
+  .react-datepicker__day--keyboard-selected,
+  .react-datepicker__day--selected {
+    background-color: #392a6b;
+    color: white;
+  }
+
+  .react-datepicker__day .react-datepicker__day--selected {
+    color: white;
+  }
+
+  .react-datepicker__day--keyboard-selected:hover,
+  .react-datepicker__day--selected:hover {
+    background-color: #392a6b !important;
+  }
+
+  .react-datepicker__header {
+    background-color: #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .react-datepicker__navigation {
+    width: 20px;
+    height: 20px;
+    background-color: #464646;
+    top: 10px;
+    border: none;
+  }
+
+  .react-datepicker__navigation--previous {
+    background: url('../../../../../images/arrow-left.png') no-repeat 50% 50%;
+    left: 12px;
+  }
+
+  .react-datepicker__navigation--previous:focus,
+  .react-datepicker__navigation--previous:hover,
+  .react-datepicker__navigation--next:focus,
+  .react-datepicker__navigation--next:hover {
+    border: none;
+  }
+
+  .react-datepicker__navigation--next {
+    background: url('../../../../../images/arrow-right.png') no-repeat 50% 50%;
+    right: 12px;
+  }
+
+  .react-datepicker__day:focus,
+  .react-datepicker__day:hover {
+    background-color: #d9d9d9;
+  }
+
+  .react-datepicker__current-month,
+  .react-datepicker__day-name {
+    color: #464646;
+  }
+
+  .react-datepicker__tether-element-attached-top .react-datepicker__triangle,
+  .react-datepicker__tether-element-attached-top .react-datepicker__triangle:before {
+    border-bottom-color: #d9d9d9;
+  }
+}

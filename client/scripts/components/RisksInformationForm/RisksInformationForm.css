@@ -1,0 +1,11 @@
+.RisksInformationForm {
+  .Radio {
+    margin-bottom: 20px;
+  }
+
+  .Buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../../styles/_mixins.css";
+
+.TransactionsList {
+  .Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .ViewAll {
+      margin-top: 0;
+      font-size: 14px;
+    }
+  }
+
+  .List {
+    margin-top: 0;
+  }
+}
+
+@mixin phone {
+  .TransactionsList {
+    .Header {
+      flex-direction: column;
+
+      .ViewAll {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

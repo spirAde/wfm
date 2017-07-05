@@ -1,0 +1,17 @@
+.ConnectBankPage {
+  .SecurityText {
+    margin: 20px 0;
+
+    p {
+      font-size: 13px;
+      color: #9b9b9b;
+    }
+  }
+
+  .Row {
+    margin: 20px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

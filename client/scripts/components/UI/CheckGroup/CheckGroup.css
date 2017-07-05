@@ -1,0 +1,16 @@
+.CheckGroup {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  background: #fff;
+  padding: 10px;
+
+  &.AlignRow {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .Item {
+      margin-right: 25px;
+    }
+  }
+}

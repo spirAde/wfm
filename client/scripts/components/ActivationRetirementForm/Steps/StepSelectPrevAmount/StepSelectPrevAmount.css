@@ -1,0 +1,43 @@
+@import "../../../../../styles/_mixins.css";
+
+.StepSelectPrevAmount {
+  .Row {
+    .Radio {
+      margin-bottom: 16px;
+    }
+  }
+
+  .RowButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    .Button {}
+
+    .TextLink {
+      display: block;
+      font-size: 12px;
+    }
+  }
+}
+
+@mixin phone {
+  .StepSelectPrevAmount {
+    .Row {
+      .Radio {
+        flex-direction: column;
+      }
+    }
+
+    .RowButtons {
+      .Button {
+        width: 100%;
+      }
+
+      .TextLink {
+        display: none;
+      }
+    }
+  }
+}

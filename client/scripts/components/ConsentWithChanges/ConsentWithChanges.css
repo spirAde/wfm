@@ -1,0 +1,24 @@
+@import "../../../styles/_mixins.css";
+
+.ConsentWithChanges {
+  .Button {
+    margin-top: 20px;
+  }
+}
+
+@mixin phone {
+  .ConsentWithChanges {
+    .Button {
+      margin-top: 20px;
+      max-height: inherit;
+
+      .Label {
+        white-space: normal;
+      }
+
+      .Icon {
+        width: inherit;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.RadioGroup {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  background: #fff;
+
+  &.AlignRow {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .Item {
+      margin-right: 30px;
+      min-width: 100px;
+    }
+  }
+}

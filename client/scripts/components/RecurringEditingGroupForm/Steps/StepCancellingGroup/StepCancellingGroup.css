@@ -1,0 +1,28 @@
+@import "../../../../../styles/_mixins.css";
+
+.StepCancellingGroup {
+  .Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .Button {
+      margin-top: 25px;
+    }
+  }
+}
+
+@mixin phone {
+  .StepCancellingGroup {
+    .Row {
+      &:not(:last-child) {
+        flex-direction: column;
+        justify-content: inherit;
+      }
+
+      > div {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.Field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+
+  &.Row {
+    flex-direction: row;
+  }
+
+  .LabelRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}

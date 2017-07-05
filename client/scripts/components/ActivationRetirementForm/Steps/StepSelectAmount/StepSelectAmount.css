@@ -1,0 +1,36 @@
+@import "../../../../../styles/_mixins.css";
+
+.StepSelectAmount {
+  .Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .Spinner {
+      min-height: 25px;
+    }
+  }
+
+  .RowButton {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+
+    .Button {}
+  }
+}
+
+@mixin phone {
+  .StepSelectAmount {
+    .Row {
+      flex-direction: column;
+      justify-content: inherit;
+    }
+
+    .RowButton {
+      .Button {
+        width: 100%;
+      }
+    }
+  }
+}

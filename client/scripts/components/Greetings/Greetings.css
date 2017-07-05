@@ -1,0 +1,183 @@
+@import "../../../styles/_mixins.css";
+
+.Greetings {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 300px;
+  margin: 0 -24px;
+  padding: 30px 0;
+
+  section {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 11px 0;
+  }
+
+  .AmandaQuote {
+    display: flex;
+    flex-flow: row;
+
+    .Photo {
+      display: flex;
+      size: 120px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: url(../../../images/amanda.png) no-repeat;
+      background-size: 100%;
+    }
+
+    .Description {
+      blockquote {
+        font-size: 24px;
+        color: #392a6b;
+        line-height: 32px;
+        font-weight: 200;
+        border-left: none;
+        padding: 0 0 0 16px;
+        margin: 0 10px 15px 10px;
+
+        img {
+          &:first-child {
+            margin-right: 10px;
+          }
+
+          &:last-child {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .Author {
+        font-size: 14px;
+        color: black;
+        line-height: 18px;
+        padding-left: 16px;
+      }
+    }
+  }
+
+  .Screenshot {
+    display: block;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .Features {
+    flex-flow: column nowrap;
+
+    article {
+      border-bottom: 2px solid rgba(155, 155, 155, 0.2);
+      padding: 20px 0;
+
+      h3 {
+        color: #392a6b;
+        font-weight: 200;
+        font-size: 24px;
+        line-height: 30px;
+        margin: 8px 0;
+
+        .Hint {
+          display: inline-block;
+          margin-left: 5px;
+
+          p {
+            color: white;
+          }
+        }
+      }
+
+      p {
+        font-size: 14px;
+        padding: 0;
+        line-height: 17px;
+        color: #4a4a4a;
+
+        a {
+          font-size: 14px;
+        }
+
+        &.HintMobile {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .LetsGo {
+    flex-flow: column nowrap;
+
+    h2 {
+      color: #392a6b;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 30px;
+      text-transform: none;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .Checkbox {
+      opacity: 1;
+      display: block;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+
+      .Label {
+        font-size: 16px;
+      }
+    }
+
+    .GoGoGo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .Happened {
+      font-size: 14px;
+      color: #4a4a4a;
+      line-height: 22px;
+      display: flex;
+      justify-content: center;
+
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@mixin phone {
+  .Greetings {
+    margin: 0;
+
+    .AmandaQuote {
+      flex-direction: column;
+
+      .Photo {
+        margin: 0 auto 20px;
+      }
+    }
+
+    .Features {
+      article {
+        h3 {
+          .Hint {
+            display: none;
+          }
+        }
+
+        p {
+          &.HintMobile {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

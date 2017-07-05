@@ -1,0 +1,19 @@
+@import "../../../../../styles/_mixins.css";
+
+.StepClientService {
+  .Row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+}
+
+@mixin phone {
+  .StepClientService {
+    .Row {
+      flex-direction: column;
+      justify-content: inherit;
+    }
+  }
+}

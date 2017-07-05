@@ -1,0 +1,14 @@
+.TextLink {
+  font-size: 17px;
+  color: #464646;
+  cursor: pointer;
+  margin: auto 0;
+
+  &.Disabled {
+    color: #a29bb5;
+  }
+
+  &:not(:disabled):hover {
+    color: #392a6b;
+  }
+}

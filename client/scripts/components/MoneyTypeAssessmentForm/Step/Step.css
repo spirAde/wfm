@@ -1,0 +1,23 @@
+@import "../../../../styles/_mixins.css";
+
+.Step {
+  .Row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .Button {
+      margin-left: 24px;
+    }
+  }
+}
+
+@mixin phone {
+  .Step {
+    .Row {
+      .Button {
+        width: calc(100% - 48px);
+        margin: 0 24px;
+      }
+    }
+  }
+}

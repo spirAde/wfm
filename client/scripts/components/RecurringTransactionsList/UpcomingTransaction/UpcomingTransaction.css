@@ -1,0 +1,33 @@
+.UpcomingTransaction {
+  margin-bottom: 8px;
+
+  &:first-child {
+    margin-top: 8px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .Divider {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .Status {
+    font-weight: 700;
+
+    &.Scheduled {
+      color: #464646;
+    }
+
+    &.Cancelled {
+      color: #9b9b9b;
+    }
+  }
+
+  .EditLink {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

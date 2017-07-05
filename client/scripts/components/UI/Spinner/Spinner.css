@@ -1,0 +1,11 @@
+.Spinner {
+  line-height: 0;
+
+  &.Center {
+    display: flex;
+    width: 100%;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+  }
+}

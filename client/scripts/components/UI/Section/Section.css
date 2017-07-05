@@ -1,0 +1,51 @@
+.Section {
+  max-width: 614px;
+  width: 100%;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+
+  &.ZeroPadding {
+    padding: 0;
+  }
+
+  &.BottomBorder {
+    border-bottom: 1px solid;
+
+    &.Yellow {
+      border-bottom-color: #f8c433;
+    }
+
+    &.Grey {
+      border-bottom-color: #e1e1e1;
+    }
+
+    &.Basic {
+      border-bottom-width: 1px;
+    }
+
+    &.Fat {
+      border-bottom-width: 2px;
+    }
+  }
+
+  &.TopBorder {
+    border-top: 1px solid;
+
+    &.Yellow {
+      border-top-color: #f8c433;
+    }
+
+    &.Grey {
+      border-top-color: #e1e1e1;
+    }
+
+    &.Basic {
+      border-top-width: 1px;
+    }
+
+    &.Fat {
+      border-top-width: 2px;
+    }
+  }
+}

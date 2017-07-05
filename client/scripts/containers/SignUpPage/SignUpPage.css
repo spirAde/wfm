@@ -1,0 +1,10 @@
+.SignUpPage {
+  h2 {
+    margin-top: 28px;
+    margin-bottom: 14px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+}

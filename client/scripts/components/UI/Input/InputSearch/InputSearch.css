@@ -1,0 +1,37 @@
+.InputSearch {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+
+  .Box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top-color: #e6e6e6;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    margin-top: -1px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+
+    .ItemsList {
+      .Item {
+        box-sizing: border-box;
+        background-color: #fff;
+        color: #666666;
+        cursor: pointer;
+        display: block;
+        padding: 8px 10px;
+        font-size: 13px;
+        font-family: Lato, sans-serif;
+
+        &:hover {
+          color: #392a6b;
+        }
+      }
+    }
+  }
+}

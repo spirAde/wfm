@@ -1,0 +1,76 @@
+.Tooltip {
+  display: flex;
+  position: absolute;
+  font-family: Lato, sans-serif;
+
+  .Content {
+    z-index: 10;
+    position: absolute;
+    color: #fff;
+    background: #392a6b;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 50px;
+    width: 220px;
+    max-width: 220px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 16px solid transparent;
+    }
+
+    &.Right {
+      top: -26px;
+      left: 26px;
+
+      &::before {
+        border-right: 26px solid #392a6b;
+        top: 10px;
+        left: -42px;
+      }
+    }
+
+    &.Left {
+      top: -26px;
+      left: 26px;
+
+      &::before {
+        border-right: 26px solid #392a6b;
+        top: 10px;
+        left: -42px;
+      }
+    }
+
+    &.Top {
+      top: -26px;
+      left: 26px;
+
+      &::before {
+        border-right: 26px solid #392a6b;
+        top: 10px;
+        left: -42px;
+      }
+    }
+
+    &.Bottom {
+      top: 26px;
+      left: -26px;
+
+      &::before {
+        border-bottom: 26px solid #392a6b;
+        top: -42px;
+        left: 10px;
+      }
+    }
+
+    &.Visible {
+      display: inline-block;
+    }
+  }
+}

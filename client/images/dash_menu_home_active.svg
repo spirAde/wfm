@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>dash_menu_home_active</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="16" cy="16" r="16"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="32" height="32" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dash_menu_home_active" stroke-width="2" stroke="#392A6B">
+            <g id="Oval-23-+-Path-12">
+                <use id="Oval-23" mask="url(#mask-2)" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <path d="M15.4632357,31 L15.4632357,12.4222222 C15.4632357,8.02222237 22,7.53333374 22,15.3555556 C22,18.2888887 21.0152054,22.2 13.9860439,21.711111 C7.2276147,21.2410519 7.44927992,9 13.9860437,9" id="Path-12"></path>
+            </g>
+        </g>
+    </g>
+</svg>

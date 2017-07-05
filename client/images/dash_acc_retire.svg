@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>dash_acc_retire</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,9.9955775 C0,9.44573523 0.451278687,9 1.00329963,9 L24.9967004,9 C25.5508075,9 26,9.44483697 26,9.9955775 L26,14.9989013 C26,17.7609319 24.5242784,21.6721487 22.9056327,23.9105929 C22.9056327,23.9105929 23.5,22.5 22,25.5 C20.5,28.5 20.2373047,30.0507812 20.2373047,30.0507812 C20.1062449,30.5750203 19.5500512,31 18.9931545,31 L7.00684547,31 C6.45078007,31 5.8984375,30.5625 5.75744531,30.0320245 C5.75744531,30.0320245 5.5,28.5 4,25.5 C2.5,22.5 3.08411393,23.8944955 3.08411393,23.8944955 C1.38080484,21.743625 0,17.7607271 0,14.9989013 L0,9.9955775 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="26" height="22" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dash_acc_retire">
+            <g id="Group" transform="translate(5.000000, 3.000000)">
+                <rect id="Rectangle-44" fill="#FFC708" x="8" y="3" width="2" height="5"></rect>
+                <rect id="Rectangle-47" fill="#FFC708" x="1" y="32" width="25" height="2"></rect>
+                <rect id="Rectangle-44" fill="#FFC708" x="12" y="0" width="2" height="8"></rect>
+                <rect id="Rectangle-44" fill="#FFC708" x="16" y="4" width="2" height="4"></rect>
+                <use id="Rectangle-43" stroke="#FFC708" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                <path d="M20.5,26.0000004 C23.5,24.0000004 25.0418925,24.0000004 27.5,21.9999999 C31.5809557,18.6795945 29.5,11.5 25.0418925,14" id="Path-21" stroke="#FFC708" stroke-width="2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

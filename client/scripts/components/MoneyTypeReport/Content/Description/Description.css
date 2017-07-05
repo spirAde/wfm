@@ -1,0 +1,50 @@
+.Description {
+  padding: 16px 24px;
+  color: #fff;
+
+  &.Visionary {
+    background-color: #79b2be;
+  }
+
+  &.Producer {
+    background-color: #969b12;
+  }
+
+  &.Nurturer {
+    background-color: #d9396f;
+  }
+
+  &.Epicure {
+    background-color: #1b4d7f;
+  }
+
+  &.Independent {
+    background-color: #ff6400;
+  }
+
+  .Image {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 2px #fff solid;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -2px;
+    margin-right: 4px;
+  }
+
+  .Title {
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  .CheckBox {
+    .Label {
+      font-weight: 400;
+      color: #fff;
+    }
+  }
+}
